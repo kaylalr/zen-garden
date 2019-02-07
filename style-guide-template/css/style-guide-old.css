@@ -1,17 +1,3 @@
-.cd-primary-nav {
-  width: 100%;
-}
-
-.cd-primary-nav ul {
-  display: flex;
-  flex-flow: row nowrap;
-  width: 600px;
-  height: 50px;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 1.2em;
-}
-
 /* -------------------------------- 
 
 xBackground 
@@ -141,7 +127,7 @@ h1 {
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 1.2;
-  margin: 0 0 0.4em;
+  margin: 0 0 .4em;
 }
 @media only screen and (min-width: 768px) {
   h1 {
@@ -195,11 +181,11 @@ xButtons
 .btn {
   border: none;
   box-shadow: none;
-  border-radius: 0.25em;
+  border-radius: .25em;
   font-size: 1.4rem;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  padding: 0.6em 2.2em;
+  padding: .6em 2.2em;
   cursor: pointer;
   background: #5f8ee4;
 }
@@ -259,7 +245,7 @@ xForm
 -------------------------------- */
 input[type=text], select {
   border: 1px solid #e6e6e6;
-  border-radius: 0.25em;
+  border-radius: .25em;
   background: #ffffff;
 }
 input[type=text]:focus, select:focus {
@@ -267,7 +253,7 @@ input[type=text]:focus, select:focus {
 }
 
 input[type=text] {
-  padding: 0.6em 1em;
+  padding: .6em 1em;
   box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
 }
 input[type=text].success {
@@ -305,7 +291,7 @@ input[type=checkbox] {
 .checkbox-label::before,
 .checkbox-label::after {
   /* custom radio and check boxes */
-  content: "";
+  content: '';
   display: block;
   width: 16px;
   height: 16px;
@@ -352,7 +338,7 @@ input[type=checkbox]:checked + label::after {
 
 .cd-select::after {
   /* switcher arrow for select element */
-  content: "";
+  content: '';
   position: absolute;
   z-index: 1;
   right: 14px;
@@ -371,7 +357,7 @@ input[type=checkbox]:checked + label::after {
 
 select {
   position: relative;
-  padding: 0.6em 2em 0.6em 1em;
+  padding: .6em 2em .6em 1em;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -434,10 +420,10 @@ header nav {
   header {
     height: 80px;
   }
-  header::after {
-    clear: both;
+  header:after {
     content: "";
-    display: block;
+    display: table;
+    clear: both;
   }
 }
 
@@ -487,7 +473,7 @@ header nav {
   transition: background-color 0.3s 0.3s;
 }
 .cd-nav-trigger span::before, .cd-nav-trigger span::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -500,8 +486,8 @@ header nav {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   will-change: transform;
-  -webkit-transition: transform 0.3s 0.3s;
-  -moz-transition: transform 0.3s 0.3s;
+  -webkit-transition: -webkit-transform 0.3s 0.3s;
+  -moz-transition: -moz-transform 0.3s 0.3s;
   transition: transform 0.3s 0.3s;
 }
 .cd-nav-trigger span::before {
@@ -537,8 +523,8 @@ header nav {
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
-  -webkit-transition: transform 0.3s;
-  -moz-transition: transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
   transition: transform 0.3s;
 }
 .cd-main-nav li a {
@@ -574,7 +560,7 @@ header nav {
   .cd-main-nav li a {
     display: inline-block;
     font-size: 1.6rem;
-    padding: 0.4em 0.2em;
+    padding: .4em .2em;
     border-bottom: none;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
@@ -638,13 +624,13 @@ header nav {
   white-space: nowrap;
   text-align: center;
   font-size: 1.2rem;
-  -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
-  -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
-  transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  -webkit-transition: opacity .2s 0s, visibility 0s .2s;
+  -moz-transition: opacity .2s 0s, visibility 0s .2s;
+  transition: opacity .2s 0s, visibility 0s .2s;
 }
 .cd-download span::before {
   /* right arrow */
-  content: "";
+  content: '';
   position: absolute;
   top: 12px;
   left: 100%;
@@ -659,9 +645,9 @@ header nav {
 .no-touch .cd-download:hover span {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity 0.2s 0s, visibility 0s 0s;
-  -moz-transition: opacity 0.2s 0s, visibility 0s 0s;
-  transition: opacity 0.2s 0s, visibility 0s 0s;
+  -webkit-transition: opacity .2s 0s, visibility 0s 0s;
+  -moz-transition: opacity .2s 0s, visibility 0s 0s;
+  transition: opacity .2s 0s, visibility 0s 0s;
 }
 @media only screen and (min-width: 1024px) {
   .cd-download {
@@ -714,40 +700,28 @@ main > h1 {
 section {
   margin: 3em 0;
 }
-section::after {
-  clear: both;
+section:after {
   content: "";
-  display: block;
+  display: table;
+  clear: both;
 }
 section:nth-of-type(1) h2::before {
-  content: "1. ";
+  content: '1. ';
 }
 section:nth-of-type(2) h2::before {
-  content: "2. ";
+  content: '2. ';
 }
 section:nth-of-type(3) h2::before {
-  content: "3. ";
+  content: '3. ';
 }
 section:nth-of-type(4) h2::before {
-  content: "4. ";
+  content: '4. ';
 }
 section:nth-of-type(5) h2::before {
-  content: "5. ";
+  content: '5. ';
 }
 section:nth-of-type(6) h2::before {
-  content: "6. ";
-}
-section:nth-of-type(7) h2::before {
-  content: "7. ";
-}
-section:nth-of-type(8) h2::before {
-  content: "8. ";
-}
-section:nth-of-type(9) h2::before {
-  content: "9. ";
-}
-section:nth-of-type(10) h2::before {
-  content: "10. ";
+  content: '6. ';
 }
 @media only screen and (min-width: 768px) {
   section {
@@ -774,7 +748,7 @@ section:nth-of-type(10) h2::before {
   width: 100%;
 }
 .cd-branding ul:last-of-type {
-  padding-top: 0.6em;
+  padding-top: .6em;
 }
 .cd-branding ul:last-of-type li {
   display: inline-block;
@@ -788,17 +762,17 @@ section:nth-of-type(10) h2::before {
 .cd-branding ul:last-of-type li:nth-of-type(2) img {
   width: 60px;
   height: 60px;
-  border-radius: 0.6em;
+  border-radius: .6em;
 }
 .cd-branding ul:last-of-type li:nth-of-type(3) img {
   width: 32px;
   height: 32px;
-  border-radius: 0.4em;
+  border-radius: .4em;
 }
 .cd-branding ul:last-of-type li:nth-of-type(4) img {
   width: 16px;
   height: 16px;
-  border-radius: 0.2em;
+  border-radius: .2em;
 }
 @media only screen and (min-width: 768px) {
   .cd-branding .cd-box {
@@ -834,7 +808,7 @@ section:nth-of-type(10) h2::before {
 }
 .cd-colors .cd-color-swatch::before, .cd-colors .cd-color-swatch::after {
   /* lighter and darker color shades of the same swatch */
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   width: 50%;
@@ -848,7 +822,7 @@ section:nth-of-type(10) h2::before {
 }
 .cd-colors b {
   display: block;
-  padding: 0.6em 0;
+  padding: .6em 0;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
   background: #5f8ee4;
@@ -917,16 +891,16 @@ section:nth-of-type(10) h2::before {
 }
 @media only screen and (min-width: 768px) {
   .cd-typography .cd-box .cd-box,
-.cd-buttons .cd-box .cd-box,
-.cd-icons .cd-box .cd-box,
-.cd-form .cd-box .cd-box {
+  .cd-buttons .cd-box .cd-box,
+  .cd-icons .cd-box .cd-box,
+  .cd-form .cd-box .cd-box {
     padding: 2em;
   }
 }
 
 /* xTypography section - basic style */
 .cd-typography h1::before {
-  content: "Aa - ";
+  content: 'Aa - ';
   color: #5f8ee4;
 }
 
@@ -940,7 +914,7 @@ section:nth-of-type(10) h2::before {
   border-top-right-radius: 0;
 }
 .cd-buttons button {
-  margin: 0.4em;
+  margin: .4em;
 }
 @media only screen and (min-width: 1024px) {
   .cd-buttons button {
@@ -1002,5 +976,3 @@ section:nth-of-type(10) h2::before {
 .no-csstransitions .cd-select::after {
   display: none;
 }
-
-/*# sourceMappingURL=style-guide.css.map */
