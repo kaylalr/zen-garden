@@ -50,7 +50,7 @@ xBackground
 -------------------------------- */
 body {
   /* this is the page background */
-  background-color: #8bcdd6;
+  background-color: #ffffff;
 }
 
 /* -------------------------------- 
@@ -62,7 +62,7 @@ xPatterns
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
   border: 1px solid #3b7340;
   border-radius: 3px;
-  background: #8bcdd6;
+  background: #ffffff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 6px;
 }
@@ -92,7 +92,7 @@ header {
   background: #654321;
 }
 .cd-main-nav li a {
-  color: #8bcdd6;
+  color: #ffffff;
   border-color: #785027;
 }
 @media only screen and (min-width: 1024px) {
@@ -100,30 +100,30 @@ header {
     color: #d5a97d;
   }
   .cd-main-nav li a.selected {
-    color: #8bcdd6;
+    color: #ffffff;
     box-shadow: 0 2px 0 #d2b48c;
   }
   .no-touch .cd-main-nav li a:hover {
-    color: #8bcdd6;
+    color: #ffffff;
   }
 }
 
 .cd-nav-trigger span {
   /* hamburger menu */
-  background-color: #8bcdd6;
+  background-color: #ffffff;
 }
 .cd-nav-trigger span::before, .cd-nav-trigger span::after {
   /* upper and lower lines */
-  background-color: #8bcdd6;
+  background-color: #ffffff;
 }
 
 .nav-is-visible .cd-nav-trigger span {
   /* hide line in the center on mobile when nav is visible */
-  background-color: rgba(139, 205, 214, 0);
+  background-color: rgba(255, 255, 255, 0);
 }
 .nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
   /* preserve visibility of upper and lower lines - close icon */
-  background-color: #8bcdd6;
+  background-color: white;
 }
 
 .cd-download {
@@ -136,7 +136,7 @@ header {
 .cd-download span {
   /* tooltip */
   background: #d2b48c;
-  color: #8bcdd6;
+  color: #ffffff;
 }
 .cd-download span::before {
   /* right arrow color */
@@ -154,7 +154,7 @@ main > h1 {
 @media only screen and (min-width: 1600px) {
   main > h1 {
     /* title goes into the header on big devices */
-    color: #8bcdd6;
+    color: #ffffff;
   }
 }
 
@@ -722,13 +722,13 @@ section:nth-of-type(10) h2::before {
   background: #52361b;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-  background: #da6140;
+  background: #8bcdd6;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-  background: #de7355;
+  background: #9ed5dd;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-  background: #d64f2b;
+  background: #78c5cf;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
   background: #3b7340;
@@ -740,13 +740,13 @@ section:nth-of-type(10) h2::before {
   background: #326237;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
-  background: #8bcdd6;
+  background: #ffffff;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
-  background: #9ed5dd;
+  background: white;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
-  background: #78c5cf;
+  background: #f2f2f2;
 }
 @media only screen and (min-width: 768px) {
   .cd-colors li {
