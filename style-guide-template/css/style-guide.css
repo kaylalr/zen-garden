@@ -8,8 +8,8 @@
 
 .cd-primary-nav {
   width: 100%;
+  background-color: #654321;
 }
-
 .cd-primary-nav ul {
   display: flex;
   flex-flow: row nowrap;
@@ -18,6 +18,29 @@
   justify-content: space-around;
   align-items: center;
   font-size: 1.2em;
+}
+.cd-primary-nav ul li a:link, .cd-primary-nav ul li a:visited {
+  color: #d2b48c;
+  text-decoration: none;
+}
+.cd-primary-nav ul li a:active {
+  color: white;
+  text-decoration: underline;
+}
+.cd-primary-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+a:link, a:visited {
+  color: #d2b48c;
+  text-decoration: none;
+}
+a:active {
+  color: white;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 /* -------------------------------- 
@@ -50,12 +73,12 @@ xNavigation
 
 -------------------------------- */
 header {
-  background-color: #19191a;
+  background-color: #654321;
 }
 
 .cd-logo {
   /* logo box style */
-  background-color: #5f8ee4;
+  background-color: #d2b48c;
   width: 120px;
 }
 @media only screen and (min-width: 1024px) {
@@ -66,19 +89,19 @@ header {
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
-  background: #19191a;
+  background: #654321;
 }
 .cd-main-nav li a {
   color: #ffffff;
-  border-color: #262627;
+  border-color: #785027;
 }
 @media only screen and (min-width: 1024px) {
   .cd-main-nav li a {
-    color: #7d7d82;
+    color: #d5a97d;
   }
   .cd-main-nav li a.selected {
     color: #ffffff;
-    box-shadow: 0 2px 0 #5f8ee4;
+    box-shadow: 0 2px 0 #d2b48c;
   }
   .no-touch .cd-main-nav li a:hover {
     color: #ffffff;
@@ -105,19 +128,19 @@ header {
 
 .cd-download {
   /* download button top-right visible on big devices */
-  background-color: #323234;
+  background-color: #8b5d2e;
 }
 .no-touch .cd-download:hover {
-  background-color: #3f3f41;
+  background-color: #9f6934;
 }
 .cd-download span {
   /* tooltip */
-  background: #5f8ee4;
+  background: #d2b48c;
   color: #ffffff;
 }
 .cd-download span::before {
   /* right arrow color */
-  border-color: #5f8ee4;
+  border-color: #d2b48c;
 }
 
 /* -------------------------------- 
@@ -126,7 +149,7 @@ xPage title
 
 -------------------------------- */
 main > h1 {
-  color: #19191a;
+  color: #654321;
 }
 @media only screen and (min-width: 1600px) {
   main > h1 {
@@ -142,7 +165,7 @@ xTypography
 -------------------------------- */
 h1, h2 {
   font-family: "Open Sans", sans-serif;
-  color: #19191a;
+  color: #654321;
 }
 
 h1 {
@@ -182,10 +205,10 @@ section > h2::before {
 p {
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #58585b;
+  color: #c28344;
 }
 p a {
-  color: #5f8ee4;
+  color: #d2b48c;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -200,194 +223,16 @@ p a {
 xButtons 
 
 -------------------------------- */
-.btn {
-  border: none;
-  box-shadow: none;
-  border-radius: 0.25em;
-  font-size: 1.4rem;
-  font-family: "Open Sans", sans-serif;
-  color: #ffffff;
-  padding: 0.6em 2.2em;
-  cursor: pointer;
-  background: #5f8ee4;
-}
-.btn:focus {
-  outline: none;
-}
-.no-touch .btn:hover {
-  background: #759de8;
-}
-.btn.btn-success {
-  background: #6fce72;
-}
-.no-touch .btn.btn-success:hover {
-  background: #82d485;
-}
-.btn.btn-alert {
-  background: #e4655f;
-}
-.no-touch .btn.btn-alert:hover {
-  background: #e87a75;
-}
-.btn.btn-outline {
-  color: #5f8ee4;
-  background: transparent;
-  box-shadow: inset 0 0 0 1px #5f8ee4;
-}
-.no-touch .btn.btn-outline:hover {
-  color: #ffffff;
-  background: #5f8ee4;
-}
-@media only screen and (min-width: 768px) {
-  .btn {
-    font-size: 1.6rem;
-  }
-}
-
-.cd-buttons .cd-box:nth-of-type(2) span {
-  /* CSS class name color */
-  color: #5f8ee4;
-}
-
 /* -------------------------------- 
 
 xIcons 
 
 -------------------------------- */
-.cd-icons li {
-  /* icons size */
-  width: 32px;
-  height: 32px;
-}
-
 /* -------------------------------- 
 
 xForm 
 
 -------------------------------- */
-input[type=text], select {
-  border: 1px solid #e6e6e6;
-  border-radius: 0.25em;
-  background: #ffffff;
-}
-input[type=text]:focus, select:focus {
-  outline: none;
-}
-
-input[type=text] {
-  padding: 0.6em 1em;
-  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
-}
-input[type=text].success {
-  border-color: #6fce72;
-  box-shadow: 0 0 6px rgba(111, 206, 114, 0.2);
-}
-input[type=text].alert {
-  border-color: #e4655f;
-  box-shadow: 0 0 6px rgba(228, 101, 95, 0.2);
-}
-input[type=text]:focus {
-  border-color: #5f8ee4;
-  box-shadow: 0 0 6px rgba(95, 142, 228, 0.2);
-}
-
-input[type=radio],
-input[type=checkbox] {
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-}
-
-.radio-label,
-.checkbox-label {
-  padding-left: 24px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.radio-label::before, .radio-label::after,
-.checkbox-label::before,
-.checkbox-label::after {
-  /* custom radio and check boxes */
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.radio-label::before,
-.checkbox-label::before {
-  left: 0;
-  border: 1px solid #e6e6e6;
-  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
-}
-.radio-label::after,
-.checkbox-label::after {
-  left: 3px;
-  background: url("../assets/form/icon-check.svg") no-repeat center center;
-  display: none;
-}
-
-.radio-label::before {
-  border-radius: 50%;
-}
-
-.checkbox-label::before {
-  border-radius: 3px;
-}
-
-input[type=radio]:checked + label::before,
-input[type=checkbox]:checked + label::before {
-  background-color: #19191a;
-  border: none;
-  box-shadow: none;
-}
-
-input[type=radio]:checked + label::after,
-input[type=checkbox]:checked + label::after {
-  display: block;
-}
-
-.cd-select::after {
-  /* switcher arrow for select element */
-  content: "";
-  position: absolute;
-  z-index: 1;
-  right: 14px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display: block;
-  width: 16px;
-  height: 16px;
-  background: url("../assets/form/icon-select.svg") no-repeat center center;
-  pointer-events: none;
-}
-
-select {
-  position: relative;
-  padding: 0.6em 2em 0.6em 1em;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-}
-
 /* -------------------------------- 
 
 xBasic style
@@ -859,22 +704,22 @@ section:nth-of-type(10) h2::before {
   padding: 0.6em 0;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
-  background: #5f8ee4;
+  background: #d2b48c;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
-  background: #759de8;
+  background: #d9c09e;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
-  background: #497fe0;
+  background: #cba87a;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
-  background: #19191a;
+  background: #654321;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
-  background: #262627;
+  background: #785027;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch::after {
-  background: #0d0d0d;
+  background: #52361b;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
   background: #e4655f;
@@ -935,7 +780,7 @@ section:nth-of-type(10) h2::before {
 /* xTypography section - basic style */
 .cd-typography h1::before {
   content: "Aa - ";
-  color: #5f8ee4;
+  color: #d2b48c;
 }
 
 .cd-buttons .cd-box:first-of-type {
