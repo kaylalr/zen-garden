@@ -50,7 +50,7 @@ xBackground
 -------------------------------- */
 body {
   /* this is the page background */
-  background-color: #ffffff;
+  background-color: #da6140;
 }
 
 /* -------------------------------- 
@@ -60,9 +60,9 @@ xPatterns
 -------------------------------- */
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #e6e6e6;
+  border: 1px solid #3b7340;
   border-radius: 3px;
-  background: #ffffff;
+  background: #da6140;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 6px;
 }
@@ -92,7 +92,7 @@ header {
   background: #654321;
 }
 .cd-main-nav li a {
-  color: #ffffff;
+  color: #da6140;
   border-color: #785027;
 }
 @media only screen and (min-width: 1024px) {
@@ -100,30 +100,30 @@ header {
     color: #d5a97d;
   }
   .cd-main-nav li a.selected {
-    color: #ffffff;
+    color: #da6140;
     box-shadow: 0 2px 0 #d2b48c;
   }
   .no-touch .cd-main-nav li a:hover {
-    color: #ffffff;
+    color: #da6140;
   }
 }
 
 .cd-nav-trigger span {
   /* hamburger menu */
-  background-color: #ffffff;
+  background-color: #da6140;
 }
 .cd-nav-trigger span::before, .cd-nav-trigger span::after {
   /* upper and lower lines */
-  background-color: #ffffff;
+  background-color: #da6140;
 }
 
 .nav-is-visible .cd-nav-trigger span {
   /* hide line in the center on mobile when nav is visible */
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(218, 97, 64, 0);
 }
 .nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
   /* preserve visibility of upper and lower lines - close icon */
-  background-color: white;
+  background-color: #da6140;
 }
 
 .cd-download {
@@ -136,7 +136,7 @@ header {
 .cd-download span {
   /* tooltip */
   background: #d2b48c;
-  color: #ffffff;
+  color: #da6140;
 }
 .cd-download span::before {
   /* right arrow color */
@@ -154,7 +154,7 @@ main > h1 {
 @media only screen and (min-width: 1600px) {
   main > h1 {
     /* title goes into the header on big devices */
-    color: #ffffff;
+    color: #da6140;
   }
 }
 
@@ -199,7 +199,7 @@ h2 {
 
 section > h2::before {
   /* number before each section title */
-  color: silver;
+  color: #214024;
 }
 
 p {
@@ -722,31 +722,31 @@ section:nth-of-type(10) h2::before {
   background: #52361b;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-  background: #e4655f;
+  background: #8bcdd6;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-  background: #e87a75;
+  background: #9ed5dd;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-  background: #e05049;
+  background: #78c5cf;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
-  background: #e6e6e6;
+  background: #3b7340;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
-  background: #f3f3f3;
+  background: #448449;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
-  background: #d9d9d9;
+  background: #326237;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
-  background: #ffffff;
+  background: #da6140;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
-  background: white;
+  background: #de7355;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
-  background: #f2f2f2;
+  background: #d64f2b;
 }
 @media only screen and (min-width: 768px) {
   .cd-colors li {
