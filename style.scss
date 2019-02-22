@@ -1,12 +1,26 @@
 body {
     background-image: url("images/mobile-middle.png");
     background-repeat: no-repeat;
-    background-size: 100vw 100%;
+    background-size: 100vw 83%;
     background-attachment: fixed;
-    background-position: 100% 99px;
+    background-position: 0% 49px;
     margin: 0;
-    padding: 0px 30px;
-    padding-top: 100px;
+    padding: 0px 8%;
+    padding-top: 50px;
+    margin-bottom: 70px;
+    height: 100%;
+    // &::before {
+    //     content: url("images/mobile-top.png");
+    //     width: 100vw;
+    // }
+
+    // &::after {
+    // background-image: url("images/mobile-bottom.png");
+    // background-position: 0% 100%;
+    // background-size: 100vw 100px;
+    // position: fixed;
+    // z-index: 100;
+    // }
 }
 
 #zen-intro {
@@ -14,11 +28,11 @@ body {
         background-image: url("images/mobile-top.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: 100vw 100px;
+        background-size: 100vw 50px;
         position: fixed;
         // z-index: 100;
         width: 100vw;
-        height: 100px;
+        height: 50px;
         margin: 0;
         top: 0;
         left: 0;
@@ -37,6 +51,7 @@ body {
 #zen-explanation {
     &::before {
         content: url("images/lake.png");
+        width: 120px;
         float: left;
     }
 
@@ -70,6 +85,24 @@ body {
     margin-top: 30px;
 }
 
+.extra1 {
+    background-image: url("images/mobile-bottom.png");
+    // background-position: 100% 0%;
+    background-size: 100vw 50px;
+    height: 50px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+// #zen-resources {
+//     background-image: url("images/mobile-bottom.png");
+//     background-repeat: no-repeat;
+//     background-position: 0% 100%;
+// }
+
 @media only screen and (min-width: 600px) {
     body {
         background-image: url("images/map-background.png");
@@ -100,6 +133,7 @@ body {
         &::before {
             content: "";
         }
+
         background-image: url("images/mountain.png");
         background-repeat: no-repeat;
         height: 200px;
@@ -107,9 +141,11 @@ body {
         position: absolute;
         right: 5%;
         top: 150px;
+
         * {
             display: none;
         }
+
         // &:hover {
         //     * {
         //         display: block;
@@ -194,6 +230,7 @@ body {
         position: absolute;
         bottom: -10px;
         text-decoration: underline;
+
         nav {
             display: none;
         }
@@ -204,6 +241,7 @@ body {
         bottom: -10px;
         left: 180px;
         text-decoration: underline;
+
         nav {
             display: none;
         }
@@ -214,6 +252,7 @@ body {
         bottom: -10px;
         left: 285px;
         text-decoration: underline;
+
         ul {
             display: none;
         }
@@ -244,5 +283,28 @@ body {
     #zen-requirements {
         right: 10%;
         // top: 600px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    #zen-preamble {
+        background-size: 200px;
+    }
+
+    #zen-explanation {
+        background-size: 200px;
+    }
+
+    #zen-participation {
+        background-size: 200px;
+    }
+
+    #zen-benefits {
+        background-size: 200px;
+    }
+
+    #zen-requirements {
+        background-size: 200px;
+        top: 60%;
     }
 }
