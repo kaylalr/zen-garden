@@ -91,7 +91,7 @@ body {
     height: 200px;
     width: 200px;
     position: absolute;
-    right: 50px;
+    right: 5%;
     top: 150px;
   }
   #zen-preamble::before {
@@ -107,7 +107,7 @@ body {
     height: 200px;
     width: 200px;
     position: absolute;
-    left: 50px;
+    left: 10%;
     top: 300px;
   }
   #zen-explanation::before {
@@ -139,8 +139,8 @@ body {
     height: 200px;
     width: 200px;
     position: absolute;
-    left: 100px;
-    top: 650px;
+    left: 10%;
+    top: 65%;
   }
   #zen-benefits::before {
     content: "";
@@ -156,7 +156,7 @@ body {
     width: 200px;
     position: absolute;
     right: 0px;
-    top: 600px;
+    top: 70%;
   }
   #zen-requirements::before {
     content: "";
@@ -192,6 +192,27 @@ body {
   }
   #zen-resources ul {
     display: none;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #zen-preamble {
+    right: 20%;
+  }
+
+  #zen-explanation {
+    left: 10%;
+  }
+
+  #zen-participation {
+    top: 45%;
+  }
+
+  #zen-benefits {
+    left: 15%;
+  }
+
+  #zen-requirements {
+    right: 10%;
   }
 }
 

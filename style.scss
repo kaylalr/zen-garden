@@ -105,7 +105,7 @@ body {
         height: 200px;
         width: 200px;
         position: absolute;
-        right: 50px;
+        right: 5%;
         top: 150px;
         * {
             display: none;
@@ -128,7 +128,7 @@ body {
         height: 200px;
         width: 200px;
         position: absolute;
-        left: 50px;
+        left: 10%;
         top: 300px;
 
         * {
@@ -164,8 +164,8 @@ body {
         height: 200px;
         width: 200px;
         position: absolute;
-        left: 100px;
-        top: 650px;
+        left: 10%;
+        top: 65%;
 
         * {
             display: none;
@@ -183,7 +183,7 @@ body {
         width: 200px;
         position: absolute;
         right: 0px;
-        top: 600px;
+        top: 70%;
 
         * {
             display: none;
@@ -217,5 +217,32 @@ body {
         ul {
             display: none;
         }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #zen-preamble {
+        right: 20%;
+        // top: 150px;
+    }
+
+    #zen-explanation {
+        left: 10%;
+        // top: 300px;
+    }
+
+    #zen-participation {
+        // left: 45%;
+        top: 45%;
+    }
+
+    #zen-benefits {
+        left: 15%;
+        // top: 650px;
+    }
+
+    #zen-requirements {
+        right: 10%;
+        // top: 600px;
     }
 }
