@@ -9,6 +9,7 @@ body {
   padding-top: 50px;
   margin-bottom: 70px;
   height: 100%;
+  width: 84%;
 }
 
 #zen-intro h1 {
@@ -30,6 +31,7 @@ body {
 #zen-preamble::before {
   content: url("images/mountain.png");
   float: right;
+  width: 150px;
 }
 
 #zen-explanation {
@@ -37,7 +39,6 @@ body {
 }
 #zen-explanation::before {
   content: url("images/lake.png");
-  width: 120px;
   float: left;
 }
 
@@ -83,6 +84,7 @@ body {
     background-size: 100vw 100%;
     background-attachment: fixed;
     background-position: 0% 0%;
+    padding: 0 5%;
     padding-top: 60px;
   }
 
@@ -191,7 +193,7 @@ body {
   #design-archives {
     position: absolute;
     bottom: -10px;
-    left: 180px;
+    left: 200px;
     text-decoration: underline;
   }
   #design-archives nav {
@@ -201,10 +203,14 @@ body {
   #zen-resources {
     position: absolute;
     bottom: -10px;
-    left: 285px;
+    left: 300px;
     text-decoration: underline;
   }
   #zen-resources ul {
+    display: none;
+  }
+
+  .extra1 {
     display: none;
   }
 }

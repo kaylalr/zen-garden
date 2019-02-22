@@ -9,11 +9,11 @@ body {
     padding-top: 50px;
     margin-bottom: 70px;
     height: 100%;
+    width: 84%;
     // &::before {
     //     content: url("images/mobile-top.png");
     //     width: 100vw;
     // }
-
     // &::after {
     // background-image: url("images/mobile-bottom.png");
     // background-position: 0% 100%;
@@ -43,6 +43,7 @@ body {
     &::before {
         content: url("images/mountain.png");
         float: right;
+        width: 150px;
     }
 
     margin-top: 30px;
@@ -51,7 +52,6 @@ body {
 #zen-explanation {
     &::before {
         content: url("images/lake.png");
-        width: 120px;
         float: left;
     }
 
@@ -110,6 +110,7 @@ body {
         background-size: 100vw 100%;
         background-attachment: fixed;
         background-position: 0% 0%;
+        padding: 0 5%;
         padding-top: 60px;
     }
 
@@ -239,7 +240,7 @@ body {
     #design-archives {
         position: absolute;
         bottom: -10px;
-        left: 180px;
+        left: 200px;
         text-decoration: underline;
 
         nav {
@@ -250,12 +251,16 @@ body {
     #zen-resources {
         position: absolute;
         bottom: -10px;
-        left: 285px;
+        left: 300px;
         text-decoration: underline;
 
         ul {
             display: none;
         }
+    }
+
+    .extra1 {
+        display: none;
     }
 }
 
