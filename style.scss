@@ -1,0 +1,221 @@
+body {
+    background-image: url("images/mobile-middle.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100%;
+    background-attachment: fixed;
+    background-position: 100% 99px;
+    margin: 0;
+    padding: 0px 30px;
+    padding-top: 100px;
+}
+
+#zen-intro {
+    h1 {
+        background-image: url("images/mobile-top.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100vw 100px;
+        position: fixed;
+        // z-index: 100;
+        width: 100vw;
+        height: 100px;
+        margin: 0;
+        top: 0;
+        left: 0;
+    }
+}
+
+#zen-preamble {
+    &::before {
+        content: url("images/mountain.png");
+        float: right;
+    }
+
+    margin-top: 30px;
+}
+
+#zen-explanation {
+    &::before {
+        content: url("images/lake.png");
+        float: left;
+    }
+
+    margin-top: 30px;
+}
+
+#zen-participation {
+    &::before {
+        content: url("images/cave.png");
+        float: right;
+    }
+
+    margin-top: 30px;
+}
+
+#zen-benefits {
+    &::before {
+        content: url("images/island1.png");
+        float: left;
+    }
+
+    margin-top: 30px;
+}
+
+#zen-requirements {
+    &::before {
+        content: url("images/island2.png");
+        float: right;
+    }
+
+    margin-top: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-image: url("images/map-background.png");
+        background-repeat: no-repeat;
+        background-size: 100vw 100%;
+        background-attachment: fixed;
+        background-position: 0% 0%;
+        padding-top: 60px;
+    }
+
+    #zen-intro {
+        h1 {
+            background-image: none;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100vw 100px;
+            position: fixed;
+            // z-index: 100;
+            width: 100vw;
+            height: 100px;
+            margin: 0;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    #zen-preamble {
+        &::before {
+            content: "";
+        }
+        background-image: url("images/mountain.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        right: 50px;
+        top: 150px;
+        * {
+            display: none;
+        }
+        // &:hover {
+        //     * {
+        //         display: block;
+        //         position: absolute;
+        //     }
+        // }
+    }
+
+    #zen-explanation {
+        &::before {
+            content: "";
+        }
+
+        background-image: url("images/lake.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 50px;
+        top: 300px;
+
+        * {
+            display: none;
+        }
+    }
+
+    #zen-participation {
+        &::before {
+            content: "";
+        }
+
+        background-image: url("images/cave.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 45%;
+        top: 450px;
+
+        * {
+            display: none;
+        }
+    }
+
+    #zen-benefits {
+        &::before {
+            content: "";
+        }
+
+        background-image: url("images/island1.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 100px;
+        top: 650px;
+
+        * {
+            display: none;
+        }
+    }
+
+    #zen-requirements {
+        &::before {
+            content: "";
+        }
+
+        background-image: url("images/island2.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        right: 0px;
+        top: 600px;
+
+        * {
+            display: none;
+        }
+    }
+
+    #design-selection {
+        position: absolute;
+        bottom: -10px;
+        text-decoration: underline;
+        nav {
+            display: none;
+        }
+    }
+
+    #design-archives {
+        position: absolute;
+        bottom: -10px;
+        left: 180px;
+        text-decoration: underline;
+        nav {
+            display: none;
+        }
+    }
+
+    #zen-resources {
+        position: absolute;
+        bottom: -10px;
+        left: 285px;
+        text-decoration: underline;
+        ul {
+            display: none;
+        }
+    }
+}

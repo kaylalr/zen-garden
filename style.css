@@ -1,194 +1,198 @@
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
-
-/* basic elements */
-html {
-	margin: 0;
-	padding: 0;
-	}
-body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
-abbr {
-	border-bottom: none;
-	}
-
-
-/* specific divs */
-.page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-	}
-
-.intro { 
-	min-width: 470px;
-	width: 100%;
-	}
-
-header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header {
-	padding-top: 20px;
-	height: 87px;
+body {
+  background-image: url("images/mobile-middle.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
+  background-attachment: fixed;
+  background-position: 100% 99px;
+  margin: 0;
+  padding: 0px 30px;
+  padding-top: 100px;
 }
 
-.summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
-	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
-	text-align: center;
-	}
+#zen-intro h1 {
+  background-image: url("images/mobile-top.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw 100px;
+  position: fixed;
+  width: 100vw;
+  height: 100px;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
 
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
+#zen-preamble {
+  margin-top: 30px;
+}
+#zen-preamble::before {
+  content: url("images/mountain.png");
+  float: right;
+}
 
-footer { 
-	text-align: center; 
-	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
+#zen-explanation {
+  margin-top: 30px;
+}
+#zen-explanation::before {
+  content: url("images/lake.png");
+  float: left;
+}
 
-.sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
-	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
+#zen-participation {
+  margin-top: 30px;
+}
+#zen-participation::before {
+  content: url("images/cave.png");
+  float: right;
+}
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.archives { 
-	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
+#zen-benefits {
+  margin-top: 30px;
+}
+#zen-benefits::before {
+  content: url("images/island1.png");
+  float: left;
+}
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.resources { 
-	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
+#zen-requirements {
+  margin-top: 30px;
+}
+#zen-requirements::before {
+  content: url("images/island2.png");
+  float: right;
+}
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
+@media only screen and (min-width: 600px) {
+  body {
+    background-image: url("images/map-background.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100%;
+    background-attachment: fixed;
+    background-position: 0% 0%;
+    padding-top: 60px;
+  }
 
+  #zen-intro h1 {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100px;
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
 
-.sidebar ul {
-	margin: 0;
-	padding: 0;
-	}
-.sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
-	list-style-type: none;
-	}
-.sidebar li a:link {
-	color: #988F5E;
-	}
-.sidebar li a:visited {
-	color: #B3AE94;
-	}
+  #zen-preamble {
+    background-image: url("images/mountain.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: 50px;
+    top: 150px;
+  }
+  #zen-preamble::before {
+    content: "";
+  }
+  #zen-preamble * {
+    display: none;
+  }
 
+  #zen-explanation {
+    background-image: url("images/lake.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 50px;
+    top: 300px;
+  }
+  #zen-explanation::before {
+    content: "";
+  }
+  #zen-explanation * {
+    display: none;
+  }
 
-.extra1 {
-	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}
+  #zen-participation {
+    background-image: url("images/cave.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 45%;
+    top: 450px;
+  }
+  #zen-participation::before {
+    content: "";
+  }
+  #zen-participation * {
+    display: none;
+  }
+
+  #zen-benefits {
+    background-image: url("images/island1.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 100px;
+    top: 650px;
+  }
+  #zen-benefits::before {
+    content: "";
+  }
+  #zen-benefits * {
+    display: none;
+  }
+
+  #zen-requirements {
+    background-image: url("images/island2.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: 0px;
+    top: 600px;
+  }
+  #zen-requirements::before {
+    content: "";
+  }
+  #zen-requirements * {
+    display: none;
+  }
+
+  #design-selection {
+    position: absolute;
+    bottom: -10px;
+    text-decoration: underline;
+  }
+  #design-selection nav {
+    display: none;
+  }
+
+  #design-archives {
+    position: absolute;
+    bottom: -10px;
+    left: 180px;
+    text-decoration: underline;
+  }
+  #design-archives nav {
+    display: none;
+  }
+
+  #zen-resources {
+    position: absolute;
+    bottom: -10px;
+    left: 285px;
+    text-decoration: underline;
+  }
+  #zen-resources ul {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
