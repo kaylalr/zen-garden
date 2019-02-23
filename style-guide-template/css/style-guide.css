@@ -78,7 +78,7 @@ header {
 
 .cd-logo {
   /* logo box style */
-  background-color: #d2b48c;
+  background-color: #fdd094;
   width: 120px;
 }
 @media only screen and (min-width: 1024px) {
@@ -101,7 +101,7 @@ header {
   }
   .cd-main-nav li a.selected {
     color: #ffffff;
-    box-shadow: 0 2px 0 #d2b48c;
+    box-shadow: 0 2px 0 #fdd094;
   }
   .no-touch .cd-main-nav li a:hover {
     color: #ffffff;
@@ -135,12 +135,12 @@ header {
 }
 .cd-download span {
   /* tooltip */
-  background: #d2b48c;
+  background: #fdd094;
   color: #ffffff;
 }
 .cd-download span::before {
   /* right arrow color */
-  border-color: #d2b48c;
+  border-color: #fdd094;
 }
 
 /* -------------------------------- 
@@ -208,7 +208,7 @@ p {
   color: #c28344;
 }
 p a {
-  color: #d2b48c;
+  color: #fdd094;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -704,13 +704,13 @@ section:nth-of-type(10) h2::before {
   padding: 0.6em 0;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
-  background: #d2b48c;
+  background: #fdd094;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
-  background: #d9c09e;
+  background: #fddbad;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
-  background: #cba87a;
+  background: #fdc57b;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
   background: #654321;
@@ -780,7 +780,7 @@ section:nth-of-type(10) h2::before {
 /* xTypography section - basic style */
 .cd-typography h1::before {
   content: "Aa - ";
-  color: #d2b48c;
+  color: #fdd094;
 }
 
 .cd-buttons .cd-box:first-of-type {
