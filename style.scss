@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Muli');
+
 body {
     background-image: url("images/mobile-middle.png");
     background-repeat: no-repeat;
@@ -21,6 +23,13 @@ body {
     // position: fixed;
     // z-index: 100;
     // }
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+}
+p {
+    font-family: 'Muli', sans-serif;
 }
 
 #zen-intro {
