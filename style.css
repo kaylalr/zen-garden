@@ -40,7 +40,7 @@ body {
   margin-top: 30px;
 }
 #zen-explanation::before {
-  content: url("images/lake.png");
+  content: url("images/lake-svg.svg");
   float: left;
 }
 
@@ -49,7 +49,7 @@ body {
   margin-top: 30px;
 }
 #zen-participation::before {
-  content: url("images/cave.png");
+  content: url("images/cave-svg.svg");
   float: right;
 }
 
@@ -58,7 +58,7 @@ body {
   margin-top: 30px;
 }
 #zen-benefits::before {
-  content: url("images/island1.png");
+  content: url("images/island1-svg.svg");
   float: left;
 }
 
@@ -67,7 +67,7 @@ body {
   margin-top: 30px;
 }
 #zen-requirements::before {
-  content: url("images/island2.png");
+  content: url("images/island2-svg.svg");
   float: right;
 }
 
@@ -112,18 +112,20 @@ body {
     position: absolute;
     left: 70%;
     top: 200px;
+    transform: scale(1);
     transition: transform 1s;
   }
-  #zen-preamble h3, #zen-preamble p {
-    opacity: 0;
+  #zen-preamble h3,
+#zen-preamble p {
     overflow: hidden;
-    transition: all 1s;
     width: 500px;
     position: absolute;
     left: 40%;
     background-color: rgba(192, 192, 192, 0.5);
     z-index: 100;
-    padding: 7px 15px;
+    height: 0;
+    opacity: 0;
+    transition: opacity 2s;
   }
   #zen-preamble h3 {
     top: 200px;
@@ -138,77 +140,50 @@ body {
     top: 357px;
   }
   #zen-preamble:hover::before {
-    height: 200px;
-    width: 200px;
     transform: scale(1.25);
   }
-  #zen-preamble:hover h3, #zen-preamble:hover p {
+  #zen-preamble:hover h3,
+#zen-preamble:hover p {
+    height: initial;
+    padding: 7px 15px;
     opacity: 1;
   }
 
   /******************************************       LAKE       ******************************************/
-  #zen-explanation {
-    background-image: url("images/lake.png");
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
+  #zen-explanation::before {
     position: absolute;
     left: 10%;
     top: 300px;
-  }
-  #zen-explanation::before {
-    content: "";
   }
   #zen-explanation * {
     display: none;
   }
 
   /******************************************       CAVE       ******************************************/
-  #zen-participation {
-    background-image: url("images/cave.png");
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
+  #zen-participation::before {
     position: absolute;
     left: 45%;
     top: 450px;
-  }
-  #zen-participation::before {
-    content: "";
   }
   #zen-participation * {
     display: none;
   }
 
   /******************************************     ISLAND 1     ******************************************/
-  #zen-benefits {
-    background-image: url("images/island1.png");
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    left: 10%;
-    top: 65%;
-  }
   #zen-benefits::before {
-    content: "";
+    position: absolute;
+    left: 20%;
+    top: 65%;
   }
   #zen-benefits * {
     display: none;
   }
 
   /******************************************     ISLAND 2     ******************************************/
-  #zen-requirements {
-    background-image: url("images/island2.png");
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    right: 0px;
-    top: 70%;
-  }
   #zen-requirements::before {
-    content: "";
+    position: absolute;
+    right: 200px;
+    top: 70%;
   }
   #zen-requirements * {
     display: none;
