@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lora|Muli');
-
 body {
     background-image: url("images/mobile-middle.png");
     background-repeat: no-repeat;
@@ -12,24 +10,6 @@ body {
     margin-bottom: 70px;
     height: 100%;
     width: 84%;
-    // &::before {
-    //     content: url("images/mobile-top.png");
-    //     width: 100vw;
-    // }
-    // &::after {
-    // background-image: url("images/mobile-bottom.png");
-    // background-position: 0% 100%;
-    // background-size: 100vw 100px;
-    // position: fixed;
-    // z-index: 100;
-    // }
-}
-
-h1, h2 {
-    font-family: 'Lora', serif;
-}
-p {
-    font-family: 'Muli', sans-serif;
 }
 
 #zen-intro {
@@ -48,16 +28,18 @@ p {
     }
 }
 
+/******************************************     MOUNTAINS     ******************************************/
 #zen-preamble {
     &::before {
-        content: url("images/mountain.png");
+        content: url("images/mountain-svg.svg");
         float: right;
         width: 150px;
     }
 
     margin-top: 30px;
 }
-
+ 
+/******************************************       LAKE       ******************************************/
 #zen-explanation {
     &::before {
         content: url("images/lake.png");
@@ -67,6 +49,7 @@ p {
     margin-top: 30px;
 }
 
+/******************************************       CAVE       ******************************************/
 #zen-participation {
     &::before {
         content: url("images/cave.png");
@@ -76,6 +59,7 @@ p {
     margin-top: 30px;
 }
 
+/******************************************     ISLAND 1     ******************************************/
 #zen-benefits {
     &::before {
         content: url("images/island1.png");
@@ -85,6 +69,7 @@ p {
     margin-top: 30px;
 }
 
+/******************************************     ISLAND 2     ******************************************/
 #zen-requirements {
     &::before {
         content: url("images/island2.png");
@@ -96,7 +81,6 @@ p {
 
 .extra1 {
     background-image: url("images/mobile-bottom.png");
-    // background-position: 100% 0%;
     background-size: 100vw 50px;
     height: 50px;
     width: 100vw;
@@ -105,12 +89,6 @@ p {
     left: 0;
     z-index: 100;
 }
-
-// #zen-resources {
-//     background-image: url("images/mobile-bottom.png");
-//     background-repeat: no-repeat;
-//     background-position: 0% 100%;
-// }
 
 @media only screen and (min-width: 600px) {
     body {
@@ -139,31 +117,61 @@ p {
         }
     }
 
+/******************************************     MOUNTAINS     ******************************************/
     #zen-preamble {
+
         &::before {
-            content: "";
+            float: none;
+            position: absolute;
+            left: 70%;
+            top: 200px;
+            transition: transform 1s;
         }
 
-        background-image: url("images/mountain.png");
-        background-repeat: no-repeat;
-        height: 200px;
-        width: 200px;
-        position: absolute;
-        right: 5%;
-        top: 150px;
+        h3, p {
+            opacity: 0;
+            overflow: hidden;
+            transition: all 1s;
+            width: 500px;
+            position: absolute;
+            left: 40%;
+            background-color: rgba(192,192,192,0.5);
+            z-index: 100;
+            padding: 7px 15px;
 
-        * {
-            display: none;
         }
 
-        // &:hover {
-        //     * {
-        //         display: block;
-        //         position: absolute;
-        //     }
-        // }
+        h3 {
+            top: 200px;
+        }
+
+        p:nth-child(2) {
+            top: 239px;
+        }
+
+        p:nth-child(3) {
+            top: 289px;
+        }
+
+        p:nth-child(4) {
+            top: 357px;
+        }
+
+        &:hover {
+            &::before {
+                height: 200px;
+                width: 200px;
+                transform: scale(1.25);
+            }
+            h3, p {
+                opacity: 1;
+            }
+
+            
+        }
     }
 
+/******************************************       LAKE       ******************************************/
     #zen-explanation {
         &::before {
             content: "";
@@ -182,6 +190,7 @@ p {
         }
     }
 
+/******************************************       CAVE       ******************************************/
     #zen-participation {
         &::before {
             content: "";
@@ -200,6 +209,7 @@ p {
         }
     }
 
+/******************************************     ISLAND 1     ******************************************/
     #zen-benefits {
         &::before {
             content: "";
@@ -218,6 +228,7 @@ p {
         }
     }
 
+/******************************************     ISLAND 2     ******************************************/
     #zen-requirements {
         &::before {
             content: "";
@@ -274,26 +285,31 @@ p {
 }
 
 @media only screen and (min-width: 1000px) {
+/******************************************     MOUNTAINS     ******************************************/   
     #zen-preamble {
         right: 20%;
         // top: 150px;
     }
 
+/******************************************       LAKE       ******************************************/
     #zen-explanation {
         left: 10%;
         // top: 300px;
     }
 
+/******************************************       CAVE       ******************************************/
     #zen-participation {
         // left: 45%;
         top: 45%;
     }
 
+/******************************************     ISLAND 1     ******************************************/
     #zen-benefits {
         left: 15%;
         // top: 650px;
     }
 
+/******************************************     ISLAND 2     ******************************************/
     #zen-requirements {
         right: 10%;
         // top: 600px;
@@ -301,22 +317,27 @@ p {
 }
 
 @media only screen and (min-width: 1500px) {
+/******************************************     MOUNTAINS     ******************************************/   
     #zen-preamble {
         background-size: 200px;
     }
 
+/******************************************       LAKE       ******************************************/
     #zen-explanation {
         background-size: 200px;
     }
 
+/******************************************       CAVE       ******************************************/
     #zen-participation {
         background-size: 200px;
     }
 
+/******************************************     ISLAND 1     ******************************************/
     #zen-benefits {
         background-size: 200px;
     }
 
+/******************************************     ISLAND 2     ******************************************/
     #zen-requirements {
         background-size: 200px;
         top: 60%;
