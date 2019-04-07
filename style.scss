@@ -171,84 +171,230 @@ body {
                 padding: 7px 15px;
                 opacity: 1;
             }
-
-
         }
     }
 
     /******************************************       LAKE       ******************************************/
     #zen-explanation {
         &::before {
+            float: none;
             position: absolute;
             left: 10%;
             top: 300px;
+            transform: scale(1);
+            transition: transform 1s;
         }
 
-        // background-image: url("images/lake.png");
-        // background-repeat: no-repeat;
-        // height: 200px;
-        // width: 200px;
+        h3,
+        p {
+            overflow: hidden;
+            width: 500px;
+            position: absolute;
+            left: 23.5%;
+            margin-top: 50px;
+            background-color: rgba(192, 192, 192, 0.5);
+            z-index: 100;
+            height: 0;
+            opacity: 0;
+            transition: opacity 2s;
+        }
 
+        h3 {
+            top: 200px;
+        }
 
-        * {
-            display: none;
+        p:nth-child(2) {
+            top: 236px;
+        }
+
+        p:nth-child(3) {
+            top: 340px;
+        }
+
+        &:hover {
+            &::before {
+                // height: 200px;
+                // width: 200px;
+                transform: scale(1.25);
+            }
+
+            h3,
+            p {
+                height: initial;
+                padding: 7px 15px;
+                opacity: 1;
+            }
         }
     }
 
     /******************************************       CAVE       ******************************************/
     #zen-participation {
         &::before {
-            position: absolute;
+        float: none;
+        position: absolute;
         left: 45%;
         top: 450px;
+        transform: scale(1);
+        transition: transform 1s;
+        }
+       
+        h3,
+        p {
+            overflow: hidden;
+            width: 500px;
+            position: absolute;
+            margin-top: 158px;
+            left: 58%;
+            background-color: rgba(192, 192, 192, 0.5);
+            z-index: 100;
+            height: 0;
+            opacity: 0;
+            transition: opacity 2s;
         }
 
-        // background-image: url("images/cave.png");
-        // background-repeat: no-repeat;
-        // height: 200px;
-        // width: 200px;
-        
+        h3 {
+            top: 200px;
+        }
 
-        * {
-            display: none;
+        p:nth-child(2) {
+            top: 236px;
+        }
+
+        p:nth-child(3) {
+            top: 340px;
+        }
+
+        p:nth-child(4) {
+            top: 408px;
+        }
+
+        &:hover {
+            &::before {
+                // height: 200px;
+                // width: 200px;
+                transform: scale(1.25);
+            }
+
+            h3,
+            p {
+                height: initial;
+                padding: 7px 15px;
+                opacity: 1;
+            }
         }
     }
 
     /******************************************     ISLAND 1     ******************************************/
     #zen-benefits {
         &::before {
+            float: none;
             position: absolute;
             left: 20%;
             top: 65%;
+            transform: scale(1);
+            transition: transform 1s;
         }
 
-        // background-image: url("images/island1.png");
-        // background-repeat: no-repeat;
-        // height: 200px;
-        // width: 200px;
-        
+        h3,
+        p {
+            overflow: hidden;
+            width: 500px;
+            position: absolute;
+            left: 34%;
+            margin-top: 450px;
+            background-color: rgba(192, 192, 192, 0.5);
+            z-index: 100;
+            height: 0;
+            opacity: 0;
+            transition: opacity 2s;
+        }
 
-        * {
-            display: none;
+        h3 {
+            top: 200px;
+        }
+
+        p:nth-child(2) {
+            top: 236px;
+        }
+
+        &:hover {
+            &::before {
+                // height: 200px;
+                // width: 200px;
+                transform: scale(1.25);
+            }
+
+            h3,
+            p {
+                height: initial;
+                padding: 7px 15px;
+                opacity: 1;
+            }
         }
     }
 
     /******************************************     ISLAND 2     ******************************************/
     #zen-requirements {
         &::before {
+            float: none;
             position: absolute;
             right: 200px;
             top: 70%;
+            transform: scale(1);
+            transition: transform 1s;
         }
 
-        // background-image: url("images/island2.png");
-        // background-repeat: no-repeat;
-        // height: 200px;
-        // width: 200px;
-       
+        h3,
+        p {
+            overflow: hidden;
+            width: 500px;
+            position: absolute;
+            left: 51%;
+            margin-top: 93px;
+            background-color: rgba(192, 192, 192, 0.5);
+            z-index: 100;
+            height: 0;
+            opacity: 0;
+            transition: opacity 2s;
+        }
 
-        * {
-            display: none;
+        h3 {
+            top: 200px;
+        }
+
+        p:nth-child(2) {
+            top: 236px;
+        }
+
+        p:nth-child(3) {
+            top: 340px;
+        }
+
+        p:nth-child(4) {
+            top: 498px;
+        }
+
+        p:nth-child(5) {
+            top: 584px;
+        }
+
+        p:nth-child(6) {
+            top: 688px;
+        }
+
+        &:hover {
+            &::before {
+                // height: 200px;
+                // width: 200px;
+                transform: scale(1.25);
+            }
+
+            h3,
+            p {
+                height: initial;
+                padding: 7px 15px;
+                opacity: 1;
+            }
         }
     }
 

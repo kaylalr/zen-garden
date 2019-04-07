@@ -151,42 +151,175 @@ body {
 
   /******************************************       LAKE       ******************************************/
   #zen-explanation::before {
+    float: none;
     position: absolute;
     left: 10%;
     top: 300px;
+    transform: scale(1);
+    transition: transform 1s;
   }
-  #zen-explanation * {
-    display: none;
+  #zen-explanation h3,
+#zen-explanation p {
+    overflow: hidden;
+    width: 500px;
+    position: absolute;
+    left: 23.5%;
+    margin-top: 50px;
+    background-color: rgba(192, 192, 192, 0.5);
+    z-index: 100;
+    height: 0;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  #zen-explanation h3 {
+    top: 200px;
+  }
+  #zen-explanation p:nth-child(2) {
+    top: 236px;
+  }
+  #zen-explanation p:nth-child(3) {
+    top: 340px;
+  }
+  #zen-explanation:hover::before {
+    transform: scale(1.25);
+  }
+  #zen-explanation:hover h3,
+#zen-explanation:hover p {
+    height: initial;
+    padding: 7px 15px;
+    opacity: 1;
   }
 
   /******************************************       CAVE       ******************************************/
   #zen-participation::before {
+    float: none;
     position: absolute;
     left: 45%;
     top: 450px;
+    transform: scale(1);
+    transition: transform 1s;
   }
-  #zen-participation * {
-    display: none;
+  #zen-participation h3,
+#zen-participation p {
+    overflow: hidden;
+    width: 500px;
+    position: absolute;
+    margin-top: 158px;
+    left: 58%;
+    background-color: rgba(192, 192, 192, 0.5);
+    z-index: 100;
+    height: 0;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  #zen-participation h3 {
+    top: 200px;
+  }
+  #zen-participation p:nth-child(2) {
+    top: 236px;
+  }
+  #zen-participation p:nth-child(3) {
+    top: 340px;
+  }
+  #zen-participation p:nth-child(4) {
+    top: 408px;
+  }
+  #zen-participation:hover::before {
+    transform: scale(1.25);
+  }
+  #zen-participation:hover h3,
+#zen-participation:hover p {
+    height: initial;
+    padding: 7px 15px;
+    opacity: 1;
   }
 
   /******************************************     ISLAND 1     ******************************************/
   #zen-benefits::before {
+    float: none;
     position: absolute;
     left: 20%;
     top: 65%;
+    transform: scale(1);
+    transition: transform 1s;
   }
-  #zen-benefits * {
-    display: none;
+  #zen-benefits h3,
+#zen-benefits p {
+    overflow: hidden;
+    width: 500px;
+    position: absolute;
+    left: 34%;
+    margin-top: 450px;
+    background-color: rgba(192, 192, 192, 0.5);
+    z-index: 100;
+    height: 0;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  #zen-benefits h3 {
+    top: 200px;
+  }
+  #zen-benefits p:nth-child(2) {
+    top: 236px;
+  }
+  #zen-benefits:hover::before {
+    transform: scale(1.25);
+  }
+  #zen-benefits:hover h3,
+#zen-benefits:hover p {
+    height: initial;
+    padding: 7px 15px;
+    opacity: 1;
   }
 
   /******************************************     ISLAND 2     ******************************************/
   #zen-requirements::before {
+    float: none;
     position: absolute;
     right: 200px;
     top: 70%;
+    transform: scale(1);
+    transition: transform 1s;
   }
-  #zen-requirements * {
-    display: none;
+  #zen-requirements h3,
+#zen-requirements p {
+    overflow: hidden;
+    width: 500px;
+    position: absolute;
+    left: 51%;
+    margin-top: 93px;
+    background-color: rgba(192, 192, 192, 0.5);
+    z-index: 100;
+    height: 0;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  #zen-requirements h3 {
+    top: 200px;
+  }
+  #zen-requirements p:nth-child(2) {
+    top: 236px;
+  }
+  #zen-requirements p:nth-child(3) {
+    top: 340px;
+  }
+  #zen-requirements p:nth-child(4) {
+    top: 498px;
+  }
+  #zen-requirements p:nth-child(5) {
+    top: 584px;
+  }
+  #zen-requirements p:nth-child(6) {
+    top: 688px;
+  }
+  #zen-requirements:hover::before {
+    transform: scale(1.25);
+  }
+  #zen-requirements:hover h3,
+#zen-requirements:hover p {
+    height: initial;
+    padding: 7px 15px;
+    opacity: 1;
   }
 
   #design-selection {
