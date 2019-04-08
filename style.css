@@ -1,7 +1,7 @@
 body {
   background-image: url("images/mobile-middle.png");
   background-repeat: no-repeat;
-  background-size: 100vw 83%;
+  background-size: 100vw 89%;
   background-attachment: fixed;
   background-position: 0% 49px;
   margin: 0;
@@ -32,7 +32,7 @@ body {
 #zen-preamble::before {
   content: url("images/mountain-svg.svg");
   float: right;
-  width: 150px;
+  transform: scale(0.7);
 }
 
 /******************************************       LAKE       ******************************************/
@@ -42,6 +42,7 @@ body {
 #zen-explanation::before {
   content: url("images/lake-svg.svg");
   float: left;
+  transform: scale(0.7);
 }
 
 /******************************************       CAVE       ******************************************/
@@ -51,6 +52,7 @@ body {
 #zen-participation::before {
   content: url("images/cave-svg.svg");
   float: right;
+  transform: scale(0.7);
 }
 
 /******************************************     ISLAND 1     ******************************************/
@@ -60,6 +62,7 @@ body {
 #zen-benefits::before {
   content: url("images/island1-svg.svg");
   float: left;
+  transform: scale(0.7);
 }
 
 /******************************************     ISLAND 2     ******************************************/
@@ -69,6 +72,7 @@ body {
 #zen-requirements::before {
   content: url("images/island2-svg.svg");
   float: right;
+  transform: scale(0.7);
 }
 
 .extra1 {
@@ -324,31 +328,67 @@ body {
 
   #design-selection {
     position: absolute;
-    bottom: -10px;
+    bottom: -17px;
     text-decoration: underline;
   }
   #design-selection nav {
-    display: none;
+    overflow: hidden;
+    position: absolute;
+    bottom: 40px;
+    width: 300px;
+    background-color: rgba(192, 192, 192, 0.5);
+    z-index: 100;
+    height: 0;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  #design-selection:hover nav {
+    opacity: 1;
+    height: initial;
   }
 
   #design-archives {
     position: absolute;
-    bottom: -10px;
-    left: 200px;
+    bottom: -17px;
+    left: 20%;
     text-decoration: underline;
   }
   #design-archives nav {
-    display: none;
+    overflow: hidden;
+    position: absolute;
+    bottom: 40px;
+    width: 300px;
+    background-color: rgba(192, 192, 192, 0.5);
+    z-index: 100;
+    height: 0;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  #design-archives:hover nav {
+    opacity: 1;
+    height: initial;
   }
 
   #zen-resources {
     position: absolute;
-    bottom: -10px;
-    left: 300px;
+    bottom: -17px;
+    left: 35%;
     text-decoration: underline;
   }
   #zen-resources ul {
-    display: none;
+    overflow: hidden;
+    position: absolute;
+    bottom: 40px;
+    width: 300px;
+    background-color: rgba(192, 192, 192, 0.5);
+    z-index: 100;
+    height: 0;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  #zen-resources:hover ul {
+    opacity: 1;
+    height: initial;
   }
 
   .extra1 {

@@ -1,7 +1,7 @@
 body {
     background-image: url("images/mobile-middle.png");
     background-repeat: no-repeat;
-    background-size: 100vw 83%;
+    background-size: 100vw 89%;
     background-attachment: fixed;
     background-position: 0% 49px;
     margin: 0;
@@ -33,7 +33,7 @@ body {
     &::before {
         content: url("images/mountain-svg.svg");
         float: right;
-        width: 150px;
+        transform: scale(0.7);
     }
 
     margin-top: 30px;
@@ -44,6 +44,8 @@ body {
     &::before {
         content: url("images/lake-svg.svg");
         float: left;
+        transform: scale(0.7);
+
     }
 
     margin-top: 30px;
@@ -54,6 +56,7 @@ body {
     &::before {
         content: url("images/cave-svg.svg");
         float: right;
+        transform: scale(0.7);
     }
 
     margin-top: 30px;
@@ -64,6 +67,7 @@ body {
     &::before {
         content: url("images/island1-svg.svg");
         float: left;
+        transform: scale(0.7);
     }
 
     margin-top: 30px;
@@ -74,6 +78,7 @@ body {
     &::before {
         content: url("images/island2-svg.svg");
         float: right;
+        transform: scale(0.7);
     }
 
     margin-top: 30px;
@@ -230,14 +235,14 @@ body {
     /******************************************       CAVE       ******************************************/
     #zen-participation {
         &::before {
-        float: none;
-        position: absolute;
-        left: 45%;
-        top: 450px;
-        transform: scale(1);
-        transition: transform 1s;
+            float: none;
+            position: absolute;
+            left: 45%;
+            top: 450px;
+            transform: scale(1);
+            transition: transform 1s;
         }
-       
+
         h3,
         p {
             overflow: hidden;
@@ -400,33 +405,104 @@ body {
 
     #design-selection {
         position: absolute;
-        bottom: -10px;
+        bottom: -17px;
         text-decoration: underline;
 
+        // nav {
+        //     display: none;
+        // }
+
         nav {
-            display: none;
+            overflow: hidden;
+            position: absolute;
+            bottom: 40px;
+            width: 300px;
+            background-color: rgba(192, 192, 192, 0.5);
+            z-index: 100;
+            height: 0;
+            opacity: 0;
+            transition: opacity 2s;
+        }
+
+        &:hover {
+            nav {
+                // background-color: rgba(192, 192, 192, 0.5);
+                // display: block;
+                // position: absolute;
+                // bottom: 40px;
+                // width: 300px;
+                opacity: 1;
+                height: initial;
+            }
         }
     }
 
     #design-archives {
         position: absolute;
-        bottom: -10px;
-        left: 200px;
+        bottom: -17px;
+        left: 20%;
         text-decoration: underline;
 
+        // nav {
+        //     display: none;
+        // }
+
         nav {
-            display: none;
+            overflow: hidden;
+            position: absolute;
+            bottom: 40px;
+            width: 300px;
+            background-color: rgba(192, 192, 192, 0.5);
+            z-index: 100;
+            height: 0;
+            opacity: 0;
+            transition: opacity 2s;
+        }
+
+        &:hover {
+            nav {
+                // background-color: rgba(192, 192, 192, 0.5);
+                // display: block;
+                // position: absolute;
+                // bottom: 40px;
+                // width: 300px;
+                opacity: 1;
+                height: initial;
+            }
         }
     }
 
     #zen-resources {
         position: absolute;
-        bottom: -10px;
-        left: 300px;
+        bottom: -17px;
+        left: 35%;
         text-decoration: underline;
 
+        // ul {
+        //     display: none;
+        // }
         ul {
-            display: none;
+            overflow: hidden;
+            position: absolute;
+            bottom: 40px;
+            width: 300px;
+            background-color: rgba(192, 192, 192, 0.5);
+            z-index: 100;
+            height: 0;
+            opacity: 0;
+            transition: opacity 2s;
+        }
+
+        &:hover {
+            ul {
+                // background-color: rgba(192, 192, 192, 0.5);
+                // display: block;
+                // position: absolute;
+                // bottom: 40px;
+                // width: 300px;
+                opacity: 1;
+                height: initial;
+            }
         }
     }
 
