@@ -1,3 +1,5 @@
+@import 'style-guide-template/scss/partials/typography';
+
 body {
     background-image: url("images/mobile-middle.png");
     background-repeat: no-repeat;
@@ -163,15 +165,15 @@ body {
         }
 
         p:nth-child(2) {
-            top: 239px;
+            top: 241px;
         }
 
         p:nth-child(3) {
-            top: 289px;
+            top: 330px;
         }
 
         p:nth-child(4) {
-            top: 357px;
+            top: 419px;
         }
 
         &:hover {

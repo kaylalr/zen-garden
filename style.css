@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Lora|Muli");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
+}
+
+p {
+  font-family: "Muli", sans-serif;
+  line-height: 25px;
+}
+
 body {
   background-image: url("images/mobile-middle.png");
   background-repeat: no-repeat;
@@ -147,13 +162,13 @@ body {
     top: 200px;
   }
   #zen-preamble p:nth-child(2) {
-    top: 239px;
+    top: 241px;
   }
   #zen-preamble p:nth-child(3) {
-    top: 289px;
+    top: 330px;
   }
   #zen-preamble p:nth-child(4) {
-    top: 357px;
+    top: 419px;
   }
   #zen-preamble:hover::before {
     transform: scale(1.25);
