@@ -18,11 +18,16 @@ body {
   background-attachment: fixed;
   background-size: 100vw 50px;
   position: fixed;
+  z-index: 200;
   width: 100vw;
   height: 50px;
   margin: 0;
   top: 0;
   left: 0;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 2em;
+  color: #707070;
 }
 
 /******************************************     MOUNTAINS     ******************************************/
@@ -83,7 +88,7 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 100;
+  z-index: 200;
 }
 
 @media only screen and (min-width: 600px) {
@@ -97,6 +102,9 @@ body {
     padding-top: 60px;
   }
 
+  #zen-intro {
+    margin-top: 40px;
+  }
   #zen-intro h1 {
     background-image: none;
     background-repeat: no-repeat;
@@ -106,8 +114,12 @@ body {
     width: 100vw;
     height: 100px;
     margin: 0;
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: 10px;
+    color: #fdd094;
+    font-size: 2em;
+    text-align: left;
+    padding-top: 0px;
   }
 
   /******************************************     MOUNTAINS     ******************************************/
@@ -328,8 +340,13 @@ body {
 
   #design-selection {
     position: absolute;
-    bottom: -17px;
+    bottom: 7px;
     text-decoration: underline;
+    text-decoration-color: #fdd094;
+  }
+  #design-selection h3 {
+    margin: 0;
+    color: #fdd094;
   }
   #design-selection nav {
     overflow: hidden;
@@ -349,9 +366,14 @@ body {
 
   #design-archives {
     position: absolute;
-    bottom: -17px;
+    bottom: 7px;
     left: 20%;
     text-decoration: underline;
+    text-decoration-color: #fdd094;
+  }
+  #design-archives h3 {
+    margin: 0;
+    color: #fdd094;
   }
   #design-archives nav {
     overflow: hidden;
@@ -371,9 +393,14 @@ body {
 
   #zen-resources {
     position: absolute;
-    bottom: -17px;
+    bottom: 7px;
     left: 35%;
     text-decoration: underline;
+    text-decoration-color: #fdd094;
+  }
+  #zen-resources h3 {
+    margin: 0;
+    color: #fdd094;
   }
   #zen-resources ul {
     overflow: hidden;
