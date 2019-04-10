@@ -206,10 +206,10 @@ body {
     top: 200px;
   }
   #zen-explanation p:nth-child(2) {
-    top: 236px;
+    top: 238px;
   }
   #zen-explanation p:nth-child(3) {
-    top: 340px;
+    top: 402px;
   }
   #zen-explanation:hover::before {
     transform: scale(1.25);
@@ -247,13 +247,13 @@ body {
     top: 200px;
   }
   #zen-participation p:nth-child(2) {
-    top: 236px;
+    top: 238px;
   }
   #zen-participation p:nth-child(3) {
-    top: 340px;
+    top: 377px;
   }
   #zen-participation p:nth-child(4) {
-    top: 408px;
+    top: 491px;
   }
   #zen-participation:hover::before {
     transform: scale(1.25);
@@ -291,7 +291,7 @@ body {
     top: 200px;
   }
   #zen-benefits p:nth-child(2) {
-    top: 236px;
+    top: 238px;
   }
   #zen-benefits:hover::before {
     transform: scale(1.25);
@@ -315,10 +315,10 @@ body {
   #zen-requirements h3,
 #zen-requirements p {
     overflow: hidden;
-    width: 500px;
+    width: 600px;
     position: absolute;
     left: 51%;
-    margin-top: 93px;
+    margin-top: 0px;
     background-color: rgba(192, 192, 192, 0.5);
     z-index: 100;
     height: 0;
@@ -329,19 +329,19 @@ body {
     top: 200px;
   }
   #zen-requirements p:nth-child(2) {
-    top: 236px;
+    top: 238px;
   }
   #zen-requirements p:nth-child(3) {
-    top: 340px;
+    top: 377px;
   }
   #zen-requirements p:nth-child(4) {
-    top: 498px;
+    top: 566px;
   }
   #zen-requirements p:nth-child(5) {
-    top: 584px;
+    top: 680px;
   }
   #zen-requirements p:nth-child(6) {
-    top: 688px;
+    top: 794px;
   }
   #zen-requirements:hover::before {
     transform: scale(1.25);
